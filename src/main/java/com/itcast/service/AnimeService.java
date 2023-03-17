@@ -2,5 +2,7 @@ package com.itcast.service;
 
 public interface AnimeService {
 
-    public void insertAnime();
+    public void selectAll();
+
+    void selectByName(String name);
 }

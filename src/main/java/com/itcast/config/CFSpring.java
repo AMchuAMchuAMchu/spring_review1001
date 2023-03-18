@@ -12,6 +12,7 @@ import javax.sql.DataSource;
 @ComponentScan("com.itcast")
 @PropertySource("classpath:jdbc.properties")
 @Import({CFMybatis.class})
+@EnableAspectJAutoProxy
 public class CFSpring {
 
     @Autowired

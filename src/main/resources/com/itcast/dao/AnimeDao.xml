@@ -3,7 +3,8 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.itcast.dao.AnimeDao">
-    <select id="selectAll" resultType="com.itcast.pojo.User">
+    <resultMap id="User" type="com.itcast.pojo.User"/>
+    <select id="selectAll" resultMap="User">
         select  name, c1, c2 from user
     </select>
 <!--    <select id="selectByName" resultType="com.itcast.pojo.User">-->

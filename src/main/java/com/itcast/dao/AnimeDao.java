@@ -16,5 +16,4 @@ public interface AnimeDao {
     @Select("select name, c1, c2 from user where name = #{name}")
     User selectByName(String name);
 
-
 }

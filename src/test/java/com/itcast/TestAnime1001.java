@@ -31,8 +31,8 @@ public class TestAnime1001 {
 
         AnimeService bean = ac.getBean(AnimeService.class);
 
-//        bean.selectAll();
-        bean.selectByName("刀剑神域");
+        bean.selectAll();
+//        bean.selectByName("刀剑神域");
 
     }
 
